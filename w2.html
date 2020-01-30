@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body><center>
+	<h1>Registration Form</h1>
+	<form method="post" autocomplete="off">
+	<table align="center">	
+		<tr>
+		<td style="text-align: right;">User id:
+		<td><input type="text" name="userid" placeholder="Required and must be of length 5 to 12" minlength="5" maxlength="12" size="35">
+		</tr>
+		<tr>
+		<td style="text-align: right;">Password:
+		<td><input type="password" name="password" placeholder="Required and must be of length 7 to 12" minlength="7" maxlength="12" size="35">
+		</tr>
+		<tr>
+		<td style="text-align: right;">Name:
+		<td><input type="text" name="name" placeholder="Required and alphabets only" size="35" pattern="[A-Za-z]">
+		</tr>
+		<tr>
+		<td style="text-align: right;">Address:
+		<td><input type="text" name="address" placeholder="Optional" size="35">
+		</tr>
+		<tr>
+		<td style="text-align: right;">Country:
+		<td><select name="country">
+			<option value="" disabledselected>(Please select a country)</option>
+			<option value="india">India</option>
+			<option value="england">England</option>
+		</select>
+		</tr>
+		<tr>	
+		<td style="text-align: right;">ZIP Code:
+		<td><input type="number" name="zipcode" placeholder="Required. Must be numeric only" size="35">
+		</tr>
+		<tr>
+		<td style="text-align: right;">Email:
+		<td><input type="email" name="email" placeholder="Required. Must be a valid email" size="35">
+		</tr>
+		<tr>
+		<td style="text-align: right;">Sex:
+		<td><input type="radio" name="sex" value="male">Male
+		<input type="radio" name="sex" value="female">Female
+		</tr>
+		<tr>
+		<td style="text-align: right;">Language:
+		<td><input type="checkbox" name="language" value="english" checked>English
+		<input type="checkbox" name="language" value="nonenglish">Non English
+		</tr>
+		<tr>
+		<td style="text-align: right;">About:
+		<td><textarea name="about" placeholder="Optional" rows="2" cols="24"></textarea>
+		</tr>
+		<tr>
+			<td colspan="2"><center> <input type="submit" value="Submit"></center>
+		</tr>
+	</form></center>
+	</table>
+
+</body>
+</html>
